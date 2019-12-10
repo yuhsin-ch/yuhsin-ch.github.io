@@ -1,0 +1,391 @@
+body{
+      background-color:#FFD4D4;
+      min-width: 1440px;
+    }
+
+
+  
+
+#sitebody{ /*外框*/
+  width:80%;
+  margin:0px auto;  
+}
+#header{ /*抬頭*/
+  width: 100%;
+  height: 400px;
+  background-color: #FFD4D4;
+  text-align:left;
+  background-image: url('https://upload.cc/i1/2019/11/24/OQymU6.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat:no-repeat;
+  margin:0px auto;
+  
+    /* position: fixed; */
+  /*position: fixed;*/
+  }
+/*/////////////////////////////////////////////////////////////////////導覽列////////////////////////////////////////////////////////////*/
+#nav{ 
+background-color:   #F0F0F0;
+width:100%;
+height:60px;
+text-align:left;
+line-height:60px;
+float:right;
+opacity:0.8;
+justify-content:center;/*水平置中 */
+}
+    input[type="button2"]{ /*導覽列的button*/
+    border:0;
+    color:#000000;
+    background-color: transparent;
+    border-radius:10px;
+    font-size: 15px; 
+    font-family: arial black;
+    margin: 5px;
+    cursor:pointer;
+
+
+    text-align:center; 
+    -webkit-transition: -webkit-transform 0.6s ease-out;
+    -moz-transition: -moz-transform 0.6s ease-out;
+    transition: transform 0.6s ease-out;
+    }
+
+    input:hover[type="button2"]{ /*導覽列的button*/
+    margin: 5px;
+    font-style: italic;
+    background-color:#FFF;
+    font-size: 15px; 
+    font-family: arial black
+    background-color:#FFFFFF;
+    opacity:0.8;
+      /*border:1px #003C9D solid;*/
+    }
+
+/*/////////////////////////////////////////////////////////////////////側欄////////////////////////////////////////////////////////////*/
+#sidebar{ 
+background-color:#FFFFFF;
+width:15%;
+height:1095px;
+text-align:center;
+float:right;
+}
+
+    input[type="button"]{ /*側欄的button*/
+    border:0;
+    background-color:#FFFFFF;
+    opacity:0.8;
+    /*color:#fff;*/
+    border-radius:10px;
+    margin: 5px;
+    cursor:pointer;
+    -webkit-transition: -webkit-transform 0.6s ease-out;
+    -moz-transition: -moz-transform 0.6s ease-out;
+    transition: transform 0.6s ease-out;
+    }
+
+    input:hover[type="button"]{ /*側欄的button*/
+    border:0;
+    margin: 5px;
+    background-color:#FFFFFF;
+    -moz-transform:rotate(6.28159rad);
+    -webkit-transform:rotate(6.28159rad);
+    -o-transform:rotate(6.28159rad);
+    -ms-transform:rotate(6.28159rad);
+    transform:rotate(6.28159rad);
+      /*border:1px #003C9D solid;*/
+    }
+
+/*////////////////////////////////////////////////////////////內容//////////////////////////////////////////////////////////*/
+
+#C1,#C2{
+width:85%;
+background-color:#FFFFFF;
+text-align:center;
+float:left;
+line-height:10px;
+}
+#C1{height:400px;}
+#C2{height:295px;}
+
+.C3C4{
+    width:85%;
+    height:400px;
+    margin-top: 755px;
+    background-image: url('https://upload.cc/i1/2019/11/25/H7k1U5.png');
+    background-color: #FFF;
+    background-size: contain;
+    background-position: center;
+    background-repeat:no-repeat;
+  }
+
+#C3{
+float:left;
+width:42.5%;
+height:400px;
+}
+
+#C4{
+width:42.5%;
+height:400px;
+background-color:#FFFFFF;
+text-align:center;
+float:right;
+line-height:10px;
+}
+
+
+ /* 利用右框線表示投票數 */
+        #A, #B, #C ,#D, #E { 
+            margin: 1px; 
+            width:  8em;
+            border-right-style: solid;
+            border-right-color:   #FFCBB3;
+        }
+        /* 建立keyframes, 分別設定不同的框線寬度 */
+        @keyframes bar1 {
+            from {
+                border-right-width: 0px
+            }
+            to {
+                border-right-width: 120px
+            }
+        }
+        @keyframes bar2 {
+            from {
+                border-right-width: 0px
+            }
+            to {
+                border-right-width: 100px
+            }
+        }
+        @keyframes bar3 {
+            from {
+                border-right-width: 0px
+            }
+            to {
+                border-right-width: 150px
+            }
+        }
+        @keyframes bar4 {
+            from {
+                border-right-width: 0px
+            }
+            to {
+                border-right-width: 50px
+            }
+        }
+        @keyframes bar5 {
+            from {
+                border-right-width: 0px
+            }
+            to {
+                border-right-width: 80px
+            }
+        }
+        /* 
+           用 id 選擇器建立所要的動畫效果 
+           各動畫時間長度不同, 都只會執行 1 次
+        */
+        #A {
+            animation: bar1 2.25s ease;
+            border-right-width: 120px
+        }
+        
+        #B {
+            animation: bar2 2s ease-out;
+            border-right-width: 100px
+        }
+        
+        #C {
+            animation: bar3 3s ease-in;
+            border-right-width: 150px
+        }
+        #D {
+            animation: bar4 1s ease-in;
+            border-right-width: 50px
+        }
+    #E {
+            animation: bar5 1.3s ease-in;
+            border-right-width: 80px
+        }
+
+
+
+#footer{
+clear:both;
+
+background-color:   #FFF7FB ;
+height:80px;
+text-align:center;
+line-height:80px;
+}
+		
+   
+
+
+#img-wrap{
+            width:100%;
+            height:350px;
+            margin: 28px 0px 0px 60px;
+            position: absolute;
+            overflow: hidden;
+        }
+       #img-wrap img.w{
+           width:80%;
+           height:auto;
+           float:left;
+           position:absolute;
+           top:0;
+           left:0;
+           opacity: 0;// 完全透明
+       }
+        #img-wrap img:first-child{
+            animation:h1 20s linear 0s infinite;
+            -webkit-animation:h1 20s linear 0s infinite; // 自定义动画名为h1,8s完成该动画，匀速执行该动画，立即执行，循环执行动画 
+        }
+        #img-wrap img:nth-child(2){
+            animation:h1 20s linear 5s infinite;
+            -webkit-animation:h1 20s linear  5s infinite ;
+        }
+        #img-wrap img:nth-child(3){
+            animation:h1 20s linear 10s infinite ;
+            -webkit-animation:h1 20s linear 10s infinite  ;
+        }
+        #img-wrap img:nth-child(4){
+            /*animation-name: h4;
+            animation-delay: 0s;
+            animation-duration: 8s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;*/
+            animation:h1 20s linear 15s infinite ;
+            -webkit-animation:h1 20s linear  15s infinite  ;
+        }
+ 
+        @keyframes h1 {
+            0%{
+               opacity: 1;
+            }
+            25%{
+                opacity: 0;
+            }
+            50%{
+                opacity: 0;
+            }
+            75%{
+                opacity: 0;
+            }
+            100%{
+                opacity: 0;
+            }
+        }
+        -webkit-@keyframes h1 {
+                    0%{
+                        opacity: 0.2;
+                    }
+                    25%{
+                        opacity:0;
+                    }
+                    50%{
+                        opacity: 0;
+                    }
+                    75%{
+                        opacity: 0;
+                    }
+                    100%{
+                        opacity: 0;
+                    }
+}
+
+  
+  #PHOTO{
+    width:100%;
+    background-color:#FF9797;
+    text-align:center;
+    line-height: 70px;
+    height:70px;
+    
+    font-family: arial black;
+  }
+  #PHOTO2{
+    width:100%;
+    background-color:#FFECEC;
+    text-align:center;
+    line-height: 70px;
+    height:400px;
+    font-family: arial black;
+  }
+  #P1{
+    float:left;
+    width:50%;
+    height:400px;
+  }
+
+  #P2{
+    width:50%;
+    height:400px;
+    background-color:#FFFFFF;
+    text-align:center;
+    float:right;
+    line-height:10px;
+  }
+
+
+
+  .aboutme{
+  height:400px;
+  }
+  .aboutme{ 
+  width:100%;
+  height:100%;
+  text-align:center;
+  border-radius:50%
+  background-repeat:no-repeat;
+  opacity:0.8;
+  }
+
+    .aboutme1{
+  height:400px;
+  }
+  .aboutme1{ 
+  width:100%;
+  height:100%;
+  text-align:center;
+  border-radius:50%
+  background-repeat:no-repeat;
+  
+  }
+
+  
+  img.abme1{ /*圖片維持等比*/
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  }
+
+  
+    
+  .C22{
+    width:100%;
+    height:100%;
+    line-height:38px;
+    text-align:center;
+      /*可達成垂直置中*/
+    background-image: url('https://upload.cc/i1/2019/11/25/39qg2I.png');
+    background-size: contain;
+      background-position: center;
+      background-repeat:no-repeat;
+      
+
+  }
+/* float - DIV 區塊浮動
+width - DIV 寬度
+height - DIV 高度
+margin - DIV 區塊的外距
+font-size - 文字大小
+background-color - 背景顏色
+text-align - 文字對齊
+line-height - 文字行高
+clear - 清除浮動 */
