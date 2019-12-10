@@ -1,0 +1,300 @@
+
+		body{
+			background-color:#FFFFF4;
+      min-width: 1440px;
+      font-family: 微軟正黑體;
+    }
+		p{
+ 		color:#525252;
+ 		 font-size:12px;
+		}
+	.Count:after{
+  		content:"%"
+	}
+
+.skillbar {
+	position:relative;
+	display:block;
+	margin-bottom:15px;
+	width:100%;
+	background:#eee;
+	height:35px;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	-webkit-transition:0.4s linear;
+	-moz-transition:0.4s linear;
+	-ms-transition:0.4s linear;
+	-o-transition:0.4s linear;
+	transition:0.4s linear;
+	-webkit-transition-property:width, background-color;
+	-moz-transition-property:width, background-color;
+	-ms-transition-property:width, background-color;
+	-o-transition-property:width, background-color;
+	transition-property:width, background-color;
+}
+
+.skillbar-title {
+	position:absolute;
+	top:0;
+	left:0;
+	width:110px;
+	font-weight:bold;
+	font-size:13px;
+	color:#ffffff;
+	background:#6adcfa;
+	-webkit-border-top-left-radius:3px;
+	-webkit-border-bottom-left-radius:4px;
+	-moz-border-radius-topleft:3px;
+	-moz-border-radius-bottomleft:3px;
+	border-top-left-radius:3px;
+	border-bottom-left-radius:3px;
+}
+
+.skillbar-title span {
+	display:block;
+	background:rgba(0, 0, 0, 0.1);
+	font-family: arial;size: 14px;
+	padding:0 20px;
+	height:35px;
+	line-height:35px;
+	-webkit-border-top-left-radius:3px;
+	-webkit-border-bottom-left-radius:3px;
+	-moz-border-radius-topleft:3px;
+	-moz-border-radius-bottomleft:3px;
+	border-top-left-radius:3px;
+	border-bottom-left-radius:3px;
+}
+
+.skillbar-bar {
+	height:35px;
+	width:0px;
+	background:#6adcfa;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+}
+
+.skill-bar-percent {
+	position:absolute;
+	font-family: arial;
+	right:10px;
+	top:0;
+	font-size:12px;
+	height:35px;
+	line-height:35px;
+	color:#000000;
+	color:rgba(0, 0, 0, 0.8);
+}
+		
+		.line{
+			width:100%;
+			display: flex;
+			margin:0px auto;
+			text-align: center;
+			background-color: #FFBD9D;
+
+		}
+		.skill,.cen{
+			display: flex;
+		}
+		.S{
+			width:5%;
+		}
+		.S2{
+			width:10%;
+		}
+		.S3{
+			width:10%;
+		}	
+		.skill, .skill1, .skill2{ 
+		background-color: #FFFFF4;
+		width: 100%;
+		height: 420px;
+		text-align: center;
+		}
+		.photo{ 
+		width: 100%;
+		height: 315px;
+		text-align: center;
+		}
+		.footer{ 
+		background-color: #FFBD9D;
+		width: 100%;
+		height: 100px;
+		text-align: center;
+		}
+		.me{ 
+		background-color:	#FFBD9D;
+		width: 100%;
+		height: 300px;		
+	}
+
+		.cen >* {
+			
+			margin:0px auto;
+			text-align: center;
+		}
+		.cen{
+			
+			width: 45%;
+			margin:0px auto;
+			text-align: center;
+		}
+		
+		/* */
+		.cSbar{
+ 		 height:250px;
+ 		 box-shadow: 1px 1px 20px  white;
+		 width: 500px;
+ 		 margin:33vh;
+ 		 text-align:center;
+ 		 display:inline-block;
+		}
+		.skill_set{
+ 		 display:inline-block;
+ 		 width:100px;
+ 		 padding:10px;
+ 		 color:#fff;
+		}
+		/**/
+		input[type="button"]{ /*側欄的button*/
+    border:0;
+    background-color:#FFFFFF;
+    opacity:0.8;
+    /*color:#fff;*/
+    border-radius:10px;
+    margin: 5px;
+    cursor:pointer;
+    -webkit-transition: -webkit-transform 0.6s ease-out;
+    -moz-transition: -moz-transform 0.6s ease-out;
+    transition: transform 0.6s ease-out;
+    }
+
+    input:hover[type="button"]{ /*側欄的button*/
+    border:0;
+    margin: 5px;
+    background-color:#FFFFFF;
+    -moz-transform:rotate(1rad);
+    -webkit-transform:rotate(1rad);
+    -o-transform:rotate(1rad);
+    -ms-transform:rotate(1rad);
+    transform:rotate(1rad);
+    opacity:0.4;
+      /*border:1px #003C9D solid;*/
+    }
+	
+	img[class="meing"]{
+	width: auto;
+	height: auto;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	max-width: 200px;
+	max-height: 100%;	
+	border:5px 		#FFF3EE solid;
+
+}
+
+img[class="meing"]:hover{
+	opacity: 0.8;
+
+}
+h4:hover{
+	color:#D94600;
+	
+}
+h2:hover{
+	color:#D94600;
+	
+}
+h3:hover{
+	color:#D94600;
+	
+}
+
+.photo-container{
+  margin: auto;
+  max-width: 1000px;
+  border: 1.5px dashed 		#FFB5B5;
+  display: flex;
+  overflow: auto;
+
+}
+
+.photo-card {
+  position: relative;
+  margin: 1.5em;
+  width: 200px;
+  height: 200px;
+  
+}
+
+.img_description_layer {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;  
+  color: #FFF;
+  background: 		#FFF7FB;
+  visibility: hidden;
+  opacity: 0.6;
+  transition: opacity 0.5s, visibility .5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+    
+}
+
+.photo-card:hover .img_description_layer {
+  visibility: visible;
+  opacity: 1;
+}
+
+.img_description_text {
+  transition: 0.5s;
+  transform: translateY(1em);
+}
+.photo-card:hover .img_description_text {
+  transform: translate(0em);
+}
+
+.box {
+  display: inline-block;
+}
+
+.progress {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.progress > .inner {
+  position: absolute;
+  color: red; 
+}
+
+.progress > svg {
+  height: 100%;
+  display: block;
+}
+
+/* 調整圖的大小 */
+		#circle{
+			width: 350px;
+			height: 350px;
+			position: relative ; /*因為旁邊文字的css定位是 absoult，所以在這裡要用 relative，不然他會亂跑。*/
+			text-align: center;
+		}
+		/*調整文字位置*/
+		.legend-line{
+			left: 350px !important;
+    		width: 130px;
+		}
+		.color-box{
+			float: none;
+		}
