@@ -1,0 +1,738 @@
+
+	    /*首頁輪播*/
+	    .main-page{
+			display:flex;
+			margin-top:120px;
+		}
+		.carousel-indicators{
+			padding-left:30px;
+		}
+
+		/******************************忘記密碼頁面CSS**********************************************/
+			    /*...................Box2開始...................*/
+        .login-1{
+        	width: 600px;
+        	height: 700px;
+        	background-color:rgba(0,0,0,.15);
+        	border-radius: 8px;
+        	backdrop-filter:blur(5px);
+        	display: flex;
+        	justify-content: center;
+        	align-items:center;
+        }
+        .form-1{
+        	width: 400px
+        	color:#FFF;
+        }
+        .form-1 h2{
+        	margin-bottom: 20px;
+        	padding-bottom: 20px;
+        	border-bottom: 1px solid #FFF;
+        }
+        .form-1 .group-1{
+        	margin-bottom: 20px;
+        }
+        .form-1 label{
+        	line-height: 2;
+        }
+        .form-1 input{
+        	width: 100%;
+        	border: 1px solid #aaa;
+        	line-height: 2;
+        	border-radius: 5px;
+        }
+        .form-1 .btn-group-1{
+        	font-size: 0;
+        }
+        .form-1 .btn-1{
+        	font-size: 15px;
+        	border-radius: 5px;
+        	border:none;
+        	width: 350px;
+        	
+        	margin-top: 10px;
+        	margin-left:5px;
+        }
+        .form-1 .btn-1 + .btn-1{
+        	margin-left:20px;
+        }
+        .btn-1 {
+           padding: 10px 20px;
+           border: 1px solid #C7C7C7;
+           background: -webkit-linear-gradient(#BFBFBF, #F7F7F7);
+           background: -o-linear-gradient(#BFBFBF, #F7F7F7);
+           background: linear-gradient(#BFBFBF, #F7F7F7);
+           background-color: #F7F7F7;
+           -webkit-border-radius: 8px;
+           -moz-border-radius: 8px;
+           border-radius: 8px;
+           color: #000000;
+           font-size: 14px;
+           font-family: '微軟正黑體';
+           text-decoration: none;
+           font-weight: bold;
+           -webkit-transition: 0.2s;
+           -moz-transition: 0.2s;
+           -o-transition: 0.2s;
+           cursor: pointer;
+           }
+ 		.btn-1:hover {
+  			background: none;
+  			background-color: #F7F7F7;
+   			border: 1px solid #ffffff;
+   			color: #301010;
+  		}
+		.btn-1:active {
+   			top: 1px;
+   			position: relative;
+   		}
+	/*...................Box2結束...................*/
+		    /*.................交易紀錄....................*/
+        .trade{
+        	width:80%;
+        	height:auto;
+        	margin-right:auto;
+        	margin-left:auto;
+        	margin-top:150px;
+        	margin-bottom:50px;
+        }
+        .trade-title{
+        	height:60px;
+        	line-height:60px;
+        	font-size:32px;
+        	font-weight:500;
+        	text-align:center;
+        	background-color:#fff;
+        }
+        .trade-main{
+        	background-color:#fff;
+        	height:400px;
+        	border-bottom:1px solid black; 
+        }
+        .trade-1 a{
+        	text-decoration:none;
+        	color:black;
+        }
+        .trade-1 ul{
+        	display:flex;
+        	font-size:18px;
+        	margin-bottom:0;
+        	margin-right:885px;
+        }
+        .trade-1 li{
+           padding:10px 10px 5px 10px;
+        }
+        .trade-1{
+        	display:flex;
+        	border-bottom:1px solid black;        
+        }
+        .trade-1 form{
+            padding:10px 10px 5px 10px;
+        }
+        .trade-2{
+        	margin-top:5px;
+        }
+        .trade-2 table{
+        	width:100%;
+        	text-align:center;
+        	font-size:18px;
+        }
+        .trade-2 table th{
+        text-decoration:underline;
+        }
+        .trade-3{
+            margin-top:20px;
+        }
+        .trade-3 .trade-back {
+        	font-size:20px;
+        	color:black;
+        	text-decoration:none;
+        	background-color:#ccc;
+        	padding:10px;
+        	border-radius:2px;
+        }
+        .trade-3 .go-shopping{
+        	font-size:20px;
+        	color:black;
+        	text-decoration:none;
+        	background-color:#ccc;
+        	padding:10px;
+        	border-radius:2px;
+        }
+
+        .trade-3 .trade-bill {
+            font-size:20px;
+            color:black;
+            text-decoration:none;
+            background-color:#ccc;
+            padding:10px;
+            border-radius:2px;
+            margin-left:950px;
+        }
+        .trade-back img{
+        	width:40px;
+        	height:30px;
+        	margin-right:5px;
+        	padding-bottom:5px;
+        }
+        .trade-bill img{
+            width:40px;
+            height:40px;
+            margin-right:5px;
+            padding-bottom:5px;
+            
+        }
+         .go-shopping img{
+        	width:40px;
+        	height:40px;
+        	margin-right:5px;
+        	padding-bottom:5px;
+        }
+              /*...................會員編輯資料...................*/
+        .login-a{
+            width: 600px;
+  
+            background-color:rgba(0,0,0,.15);
+            border-radius: 8px;
+            backdrop-filter:blur(5px);
+            display: flex;
+            justify-content: center;
+            align-items:center;
+        }
+        .form-a{
+            width: 400px
+            color:#FFF;
+        }
+        .form-a h2{
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #FFF;
+        }
+        .form-a .group-1{
+            margin-bottom: 20px;
+        }
+        .form-a label{
+            line-height: 2;
+        }
+        .form-a input{
+            width: 100%;
+            border: 1px solid #aaa;
+            line-height: 2;
+            border-radius: 5px;
+        }
+        .form-a .btn-group-1{
+            font-size: 0;
+        }
+        .form-a .btn-1{
+            font-size: 15px;
+            border-radius: 5px;
+            border:none;
+            width: 200px;
+            padding:10px 0;
+            margin-top: 10px;
+        }
+        .form-a .btn-1 + .btn-1{
+            margin-left: 40px;
+        }
+        .btn-1 {
+           padding: 10px 20px;
+           border: 1px solid #C7C7C7;
+           background: -webkit-linear-gradient(#BFBFBF, #F7F7F7);
+           background: -o-linear-gradient(#BFBFBF, #F7F7F7);
+           background: linear-gradient(#BFBFBF, #F7F7F7);
+           background-color: #F7F7F7;
+           -webkit-border-radius: 8px;
+           -moz-border-radius: 8px;
+           border-radius: 8px;
+           color: #000000;
+           font-size: 14px;
+           font-family: '微軟正黑體';
+           text-decoration: none;
+           font-weight: bold;
+           -webkit-transition: 0.2s;
+           -moz-transition: 0.2s;
+           -o-transition: 0.2s;
+           cursor: pointer;
+           }
+        .btn-1:hover {
+            background: none;
+            background-color: #F7F7F7;
+            border: 1px solid #ffffff;
+            color: #301010;
+        }
+        .btn-1:active {
+            top: 1px;
+            position: relative;
+        }
+    /*...................Box2結束...................*/
+      	    /*..............品牌優勢開始....................*/
+	    .brand {
+       	    margin-top:120px;
+            height:100vh;
+            background-image: linear-gradient(165deg, white, white 50%,#FFDB5C 50%);
+            padding-top:80px;
+        }
+        .brand .wrap{
+        	display:flex;
+        	width:1200px;
+        	margin:auto;
+        	background-color:;
+        	padding-top:75px;
+        	padding-bottom:10px;
+        }
+        .brand .item{
+        	width:370px;
+        	margin :0 15px;
+        	text-align:center;
+        	border:10px solid #CD853F;
+        	background-color:#fff;
+        	border-radius:30px;
+        }
+        .brand .item h2{
+        	color:black;
+        	text-decoration:underline;
+        	text-align:center;
+        	font-weight:700;
+        	padding-bottom:20px;
+        }
+        .brand .item p{
+        	color:black;
+        	line-height:40px;
+        	text-align:left;
+        	font-weight:500;
+        }
+        .brand .item .icon{
+        	width:150px;
+        	height:150px;
+        	background-color:#fff;
+        	margin:-75px auto 0;
+        	font-size:70px;
+        	line-height:150px;
+        	border-radius:50%;
+        	color:#CD853F;
+        	position:relative;
+        }
+        .brand .item .txt{
+        	padding:20px;
+        }
+        .brand .item:hover .fa{
+        	animation:swag .5s linear infinite alternate;
+        }
+        .brand .item .icon:before{
+        	content:'';
+        	position:absolute;
+        	width:100%;
+        	height:100%;
+        	border-top:10px solid #CD853F;
+        	border-bottom:10px solid transparent;
+        	border-right:10px solid #CD853F;
+        	border-left:10px solid transparent;
+        	left:0px;
+        	top:0px;
+        	border-radius:50%;
+        	transform:rotate(-45deg);
+        }
+        @keyframes swag{
+        	0%{transform:rotate(-15deg);}
+        	100%{transform:rotate(15deg);}
+        }
+         /*..............品牌優勢結束....................*/
+          /*.................結帳.......................*/
+	    .bill{
+	    	width:80%;
+	    	margin-right:auto;
+	    	margin-left:auto;
+	    	margin-top:120px;
+	    }
+	    .bill-title{
+	    	width:100%;
+	    	height:100px;
+	    	line-height:100px;
+	    	font-size:32px;
+	    	font-weight:500;
+	    	text-align:center;
+	    }
+	    .bill-inside{
+	    	display:flex;
+	    }
+	    .bill-table{
+	    	width:48%;
+	    	text-align:center;
+	    	margin-right:1%;
+	    	margin-left:1%;
+
+	    }
+	    .bill-table table{
+	    	width:100%;
+	    }
+	    .bill-table table th{
+	    	border-bottom:1px solid black;
+	    	width:33.333333333%;
+	    	font-size:22px;
+	    }
+	    .bill-table table td{
+	    	font-size:18px;
+	    }
+	    .bill-main{
+	    	width:48%;
+	    	text-align:center;
+	    	margin-right:1%;
+	    	margin-left:1%;
+	    }
+	    .bill-main table{
+	    	width:100%;
+	    }
+	    .bill-main th{
+	    	font-size:24px;
+	    	width:40%;
+	    	padding:10px;
+	    }
+	    .bill-main .border-bottom{
+	    	border-bottom:1px solid #696969;
+	    }
+	    .bill-select{
+	    	margin-top:10px;
+	    	text-align:left;
+	    }
+	    .bill-select > p{
+	    	font-size:20px;
+	    	width:100%;
+	    	background-color:#F5F5F5;
+	    	padding:5px;
+	    }
+	    .bill-main .location,.deliver,.pay{
+	    	display:flex;
+	    	margin-top:5px;
+	    }
+	    .bill-main .location,.deliver,.pay p{
+	    	padding:5px;
+	    	font-size:18px;
+	    }
+	    .bill-main .location input{
+	    	margin-left:60px;
+	    	height:30px;
+	    	font-size:15px;
+	    }
+	    .bill-main .deliver select{
+	    	margin-left:24px;
+	    	height:30px;
+	    	font-size:15px;
+	    }
+	    .bill-main .pay select{
+	    	margin-left:18px;
+	    	height:30px;
+	    	font-size:15px;
+	    }
+	    .bill-main .buy-now{
+	    	border-top:1px solid black;
+	    	padding-top:10px;
+	    	text-align:center;
+	    }
+	    .bill-main .buy-now input{
+	    	width:240px;
+	    	height:40px;
+	    	font-size:20px;
+	    	color:white;
+	    	font-weight:500;
+	    	background-color:#228B22;
+	    }
+	    /*.................結帳結束...................*/
+        /*................常見問題 開始...............*/
+        .question{
+            margin: auto;
+            margin-top:150px;
+            width: 1300px;
+        }
+        .question .item{
+            display: flex;
+            align-items: center;
+            margin-bottom: 70px;
+        }
+        .question .item h2{ 
+            font-size:40px;
+            font-weight: 700;
+            margin-bottom:10px;
+            box-sizing:border-box;
+            display:flex;
+        }
+        .question .item h2::before,.question .item h2::after{
+            content:'';
+            display:block;
+            height:2px;
+            width:200px;
+            background-color:black;
+            margin:auto;
+        }
+        .question .item p{ 
+            font-weight:500;
+            line-height:2.5;
+            font-size:20px;
+            margin-left:15px;
+        }
+        .question .item .pic{
+            width: 55%;
+            flex-shrink: 0;
+        }
+        .question .item .pic img{
+            width: 100%;
+            vertical-align: middle;
+            border-radius:20px;
+        }
+        .question .item .txt{
+            width: 55%;
+            flex-shrink: 0;
+            padding: 50px 30px;
+            box-sizing: border-box;
+            position: relative;
+            z-index: 1;
+        }
+        .question .item > :first-child{
+            margin-right: -10%;
+        }
+        .question .item:nth-child(1) .txt{
+           background-color: rgba(160, 182, 193, .9);
+        }
+        .question .item:nth-child(2) .txt{
+           background-color: rgba(130, 250, 208, .9);
+        }
+        .question .item:nth-child(3) .txt{
+           background-color: rgba(254, 201, 121, .9);
+        }
+        /*................常見問題 結束...............*/
+                /*...............商品............*/
+        .commodity{
+            margin-top:150px;
+            margin-right:auto;
+            margin-left:auto;
+            width:70%;
+            border:1px solid #aaa;
+            display:flex;
+        }
+        .commodity .images{
+            max-width:50%;
+            padding:45px 20px 20px 20px;
+
+        }
+        .commodity .images img{
+            width:100%;
+                      
+        }
+        .commodity .introduce{
+            width:50%;
+            padding:10px;
+        }
+        .introduce-title{
+            border-bottom:2px dotted black;
+        }
+        .delivery{
+            display:flex;
+        }
+        .pay-method{
+            display:flex;
+        }
+        .delivery img{
+            width:30px;
+            height:30px;
+        }
+        .pay-method img{
+            width:30px;
+            height:30px;
+        }
+        .introduce-buy{
+            display:flex;
+        }
+        .introduce-buy select{
+            margin-left:10px;
+            width:100px;
+            height:30px;
+        }
+        .introduce-buy a{
+            text-decoration:none;
+            color:#fff;
+            padding:10px;
+            border-radius:5px;
+        }
+        .introduce-buy .shipping-car{
+            margin-left:120px;
+            background-color:#FF0000;
+            height:50px;
+        }
+        .introduce-buy .buy-now{
+            margin-left:20px;
+            background-color:#DC143C;
+            height:50px;
+        }
+        .okay{
+            padding-top:10px;
+            display:flex;
+        }
+        /*...............商品結束........*/
+        /*..............你可能會喜歡 開始......*/
+        .you-like{
+            width:70%;
+            margin-top:20px;
+            margin-right:auto;
+            margin-left:auto;
+        }
+        .you-like .title{
+            width:50%;
+            background: linear-gradient(90deg,#ccc,#fff);
+            font-size:20px;
+            font-weight:500;
+            padding:5px;
+        }
+        .you-like .content{
+            display:flex;
+            padding-top:10px;
+        }
+        .you-like .content img{
+            height:250px;
+        }
+        .you-like .content a{
+            padding:5px;
+            font-size:16px;
+            color:black;
+            transition:0.3s;
+         }
+        .content-a a:hover{
+            position:relative;
+            top:-1px;
+            font-weight:500;
+            color:#8B4513;
+         }
+         .content-b a:hover{
+            position:relative;
+            top:-1px;
+            font-weight:500;
+            color:#8B4513;
+         }
+         .content-c a:hover{
+            position:relative;
+            top:-1px;
+            font-weight:500;
+            color:#8B4513;
+         }
+         .content-b,.content-c{
+            margin-left:50px;
+         }
+         .content-a,.content-b,.content-c{
+            display:flex;
+            flex-direction:column;
+         }
+        /*..............你可能會喜歡 結束......*/ 
+                /*評論星星*/
+        .rating2 {
+            font-size: 0;
+            margin-top:30px; 
+        }
+        .rating2 > label {
+            color:  #ddd;
+            float: right;
+        }
+        .rating2 > label:before {
+            padding: 5px;
+            font-size: 30px;
+            line-height: 1em;
+            display: inline-block;
+            content: "♥";
+        }
+        .rating {
+            font-size: 0;
+            margin-top:10px; 
+        }
+        .rating > label {
+            color:  #ddd;
+            float: right;
+        }
+        .rating > label:before {
+            padding: 5px;
+            font-size: 40px;
+            line-height: 1em;
+            display: inline-block;
+            content: "♥";
+        }
+        .rating > input:checked ~ label,
+        .rating:not(:checked) > label:hover,
+        .rating:not(:checked) > label:hover ~ label {
+            color:  #FF7575;
+        }
+        .rating > input:checked ~ label:hover,
+        .rating > label:hover ~ input:checked ~ label,
+        .rating > input:checked ~ label:hover ~ label {
+            opacity: 0.5;
+        }
+        /*商品照片*/
+        .photo-container{
+          margin: auto;
+          width: 100%;
+          height:auto;
+          border: 1px dashed #FFB5B5;
+
+          overflow: auto;
+        }
+        .photo-container2{
+          margin: auto;
+          width: 100%;
+          height: 350px;
+          display: flex;
+
+          overflow: auto;
+        }
+
+        .photo-card {
+          position: relative;
+          margin: 1.5em;
+          width: 250px;
+          height: 250px;
+          
+        }
+
+        .img_description_layer {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;  
+          color: #FFF;
+          background: #FFF7FB;
+          visibility: hidden;
+          opacity: 0.6;
+          transition: opacity 0.5s, visibility .5s;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+            
+        }
+
+        .photo-card:hover .img_description_layer {
+          visibility: visible;
+          opacity: 1;
+        }
+
+        .img_description_text {
+          color:red;
+          transition: 0.5s;
+          transform: translateY(1em);
+        }
+
+        .photo-card:hover .img_description_text {
+          transform: translate(0em);
+        }
+        .goodsimg{
+        width:246px;
+        height: 246px;
+        border:2px #FFF solid;
+        }
+        .goodsprice{
+            text-align: right;
+            color: #AE0000;
+            font-weight: bold;
+
+        }
+        .goodsmane{
+            font-weight: 400;
+            font-size: 18px;
+            color:#750000;
+
+        }

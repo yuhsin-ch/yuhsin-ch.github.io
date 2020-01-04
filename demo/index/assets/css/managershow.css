@@ -1,0 +1,46 @@
+ .login-m{
+            width: 600px;
+            height: 750px;
+            background-color:rgba(0,0,0,.15);
+            border-radius: 8px;
+            backdrop-filter:blur(5px);
+            display: flex;
+            justify-content: center;
+            align-items:center;
+        }
+        .form-m{
+            width: 400px
+            color:#FFF;
+        }
+        .form-m h2{
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #FFF;
+        }
+        .form-m .group-m{
+            margin-bottom: 20px;
+        }
+        .form-m label{
+            line-height: 2;
+        }
+        .form-m input{
+            width: 100%;
+            border: 1px solid #aaa;
+            line-height: 2;
+            border-radius: 5px;
+        }
+        .form-m .btn-group-1{
+            font-size: 0;
+        }
+        .form-m .btn-1{
+            font-size: 15px;
+            border-radius: 5px;
+            border:none;
+            width: 400px;
+            padding:10px 0;
+            margin-top: 10px;
+            margin-left:15px;
+        }
+        .form-m .btn-1 + .btn-1{
+            margin-left:20px;
+        }

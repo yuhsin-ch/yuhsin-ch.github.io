@@ -1,0 +1,114 @@
+        /*...........側邊欄........*/
+		.stay-left{
+			position:fixed;
+			top:0px;
+	        left:0px;
+			height:100%;
+			z-index:3;
+		}
+        .side-menu nav i{
+        	margin-right:5px;
+        }
+        .side-menu{
+        	width:250px;
+        	height:100%;
+        	background-image:linear-gradient(0deg,#FFE4C4,#D2B48C);
+        	display:flex;
+        	flex-direction:column;
+        	box-sizing:border-box;
+        	box-shadow:5px 0px 10px hsla(240,40%,15%,.6);
+        	position: relative;
+        	transform:translateX(-100%);
+        	transition:.3s;
+        	padding-left:5px;
+        	z-index:3;
+        }
+        .side-menu form{
+        	padding:5px;
+        	display: flex;
+        	margin:10px 25px 10px;
+        	border-radius:100px;
+        	border:1.5px solid black;
+        }
+        .side-menu form input{
+        	border:none;
+        	background-color:transparent;
+        	width:150px;
+        	padding:5px 10px;
+        }
+        .side-menu form button{
+        	border:none;
+        	background-color:transparent;
+        	padding:5px 10px;
+        }
+        .side-menu .title{
+        	font-size:20px;
+        	text-decoration:underline;
+        	margin-left:5px;
+        	font-weight:500;
+        }
+        .side-menu label{
+        	position:absolute;
+        	width:40px;
+        	height:80px;
+        	background-color:#696969;
+        	right:-40px;
+        	top:0;
+        	color:#fff;
+        	bottom:0;
+        	margin:auto;
+        	line-height:80px;
+        	text-align:center;
+        	font-size:20px;
+        	border-radius:0 10px 10px 0;
+        }
+        #side-menu-switch{
+        	position:absolute;
+            opacity:0;
+        }
+        #side-menu-switch:checked + .side-menu{
+        	transform:translateX(0);
+        }
+        #side-menu-switch:checked + .side-menu label .fa{
+        	transform:scaleX(-1);
+        }
+        .side-menu nav a{
+        	display:block;
+        	padding:10px;
+        	color:#8B4513;
+        	font-weight:500;
+        	text-decoration:none;
+        	position:relative;
+        	font-family: 'Noto Sans TC', sans-serif;
+        }
+        .side-menu nav a .fa{
+        	margin-right:-1.1em;
+        	transform:scale(0);
+        	transition:.3s;
+        }
+         .side-menu nav a:hover .fa{
+        	margin-right:5px;
+        	transform:scale(1);
+        }
+        /*...........側邊欄結束........*/
+        
+        /*...........go-to-top開始........*/
+        .to-top{
+            display:none;
+            position:fixed;
+            bottom:20px;
+            right:20px;
+            background:#000;
+            color:#fff;
+            width:40px;
+            height:40px;
+            text-align:center;
+            line-height:35px;
+            border-radius:999em;
+            cursor:pointer;
+        }
+        .to-top:hover{
+            background:#d7d7d7;
+            color:#000;
+        }
+        /*...........go-to-top結束........*/

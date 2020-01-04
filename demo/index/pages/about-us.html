@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="../assets/css/animate.css">
+	<title>夢想家|關於我們</title>
+	<script src="../assets/js/dialog.js"></script>
+	<style>
+		@import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,300,400,500,700,900&display=swap");
+		@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css");
+		@import url(../assets/css/header.css);
+		@import url(../assets/css/footer.css);
+		@import url(../assets/css/leftnav.css);
+		@import url(../assets/css/show.css);
+	/*............關於我們開始....................*/
+        .aboutus{
+	        margin-top:125px;
+	        width: 100%;
+	        height: 100vh;
+	        background-color:#ccc;
+	        background:
+		    linear-gradient(115deg,#EEE8AA 50%, transparent 50%) center center / 100% 100%,
+		    url("../assets/images/8.jpeg") right center / auto 100%;
+        }
+        .aboutus .container{
+	        margin-left:25px;
+	        width: 100%;
+	        max-width: 1440px;
+	        height: 100%;
+        }
+        .aboutus .aboutus-txt{
+	        height: 100%;
+	        display: flex;
+	        flex-direction: column;
+	        justify-content: center;
+	        align-items: flex-start;
+        }
+        .aboutus .aboutus-txt h1{
+	        font-size: 60px;
+	        border-bottom: 1px solid #333;
+	        font-weight: 700;
+	        padding-bottom: .3em;
+	        margin-bottom: .3em;
+        }
+        .aboutus-txt h1 small{
+	       display: block;
+	       font-size: 50px;
+	       font-weight: 600;
+        }
+        .aboutus .aboutus-txt h2{
+	       font-size: 40px;
+	       font-weight: 600;
+        }
+        .aboutus .aboutus-txt p{
+	       font-size: 24px;
+	       font-weight: 500;
+        }
+ 		.teampic:hover .hovershow{
+                display:block;
+                }
+    	.hovershow{
+               display:none;
+               
+               background-color:#C2C287;
+            	
+               opacity:0.85;
+              }
+        /*............關於我們結束....................*/
+ 
+	</style>
+
+ 	<script ID=clientEventHandlersJS LANGUAGE=javascript>
+ 		function btnDivH_onclick() {
+		div1.style.display='none';
+		div999.style.display='';
+		}
+ 	</script>
+</head>
+<body>
+	<!-- Header的部分 -->
+	<div class="stay-top">
+	    <ul class="shipping">
+		    <li>
+		    	<a href="#" onclick="showDialog();" class="right-line A" >SIGN IN</a>
+		    </li>	
+		    <li>
+		        <a href="#" class="B">ACCOUNT</a>
+		        <ul class="account">
+		        	<li><a href="record.html">交易紀錄</a></li>
+		        	<li><a href="addaccount.html">會員註冊</a></li>
+		        	<li><a href="altermember.html">會員資料修改</a></li>
+		        </ul>
+		    </li>
+		    <li>
+		    	 <a href="shopcar.html" class="C"><img src="../assets/images/shopping-cart.png"></a>
+		    </li>
+	    </ul>
+	    <header class="main-header">
+	        <div class="container">
+		        <a href="index.html" class="logo">
+			        <img src="../assets/images/1.png">
+		        </a>
+		        <ul class="main-nav">
+		        	<li>
+		        	    <a href="#" class="main-nav-a">關於我們</a>
+		        	    <ul class="about-us">
+		        	    	<li><a href="about-us.html">關於我們</a></li>
+		        	    	<li><a href="greatshop.html">品牌優勢</a></li>
+		        	    </ul>
+		            </li>
+		            <li>
+		        	    <a href="#" class="inner-right main-nav-a">MENU</a>
+		        	    <ul class="menu">
+                            <li><a href="MENU.html">所有商品</a></li>
+		        	    	<li><a href="CAKE.html">經典蛋糕</a></li>
+		        	    	<li><a href="MACARON.html">馬卡龍</a></li>
+		        	    	<li><a href="FRUIT.html">水果塔</a></li>
+		        	    </ul>
+		            </li>
+		            <li>
+		        	    <a href="#" class="inner-left main-nav-a">熱門商品</a>
+		        	    <ul class="only">
+		        	    	<li><a href="POP.html">人氣排行</a></li>
+		        	    	<li><a href="GROUP.html">團購排行</a></li>
+		        	    </ul>
+		            </li>
+		            <li>
+		        	    <a href="normal-question.html" class="main-nav-a">常見問題</a>
+		            </li>
+		        </ul>
+	        </div>
+        </header>
+    </div>
+ <!--登入介面彈跳的部分-->
+     <div class="dialog" id="dialog">
+    	<div class="close"><a href="#" onclick="closeDialog();"><img src="../assets/images/cross.png"></a></div>
+        <div class="BOX1" style="z-index:-1;width: 100%;">
+		    <div class="login" style="margin:0px auto;">
+        	    <form class="form"> 
+				<h2 style="color:#FFF;">會員登入</h2>
+				<div class="group">
+					<label for="user-id" style="color:#FFF;">帳號</label>
+					<input type="text" onKeyUp="value=value.replace(/[\W]/g,'')" name="" id="userid" maxlength="10">
+				</div>
+				<div class="group">
+					<label for="user-password" style="color:#FFF;">密碼</label>
+					<input type="password" onKeyUp="value=value.replace(/[\W]/g,'')" name="" id="userpassword" maxlength="10">
+				</div>
+				<div class="btn-group">
+					<button class="btn" >登入</button>
+					<button class="btn" onclick="window.open('forget.html')">忘記密碼</button>
+				</div>
+				<div class="btn-group2">
+					<button class="btn2" onclick="window.open('addaccount.html')" >沒有帳號 ? 點擊註冊</button>
+				</div>
+			    </form>
+		    </div>     
+        </div>
+    </div>
+    <!-- Footer的部分 -->
+    <!--側邊欄位-->
+    <div class="stay-left">
+    	<input type="checkbox" name="" id="side-menu-switch">
+	    <div class="side-menu">
+		<form>
+			<input type="search" placeholder="請輸入關鍵字">
+			<button><i class="fa fa-search"></i></button>
+		</form>
+		<nav>
+			<ul>
+				<li class="title">經典蛋糕</li>
+				<li><a href="commodity.html"><i class="fa fa-cutlery" aria-hidden="true"></i>咖啡蛋糕</a></li>
+				<li><a href="commodity.html"><i class="fa fa-cutlery" aria-hidden="true"></i>起司蛋糕</a></li>
+				<li><a href="commodity.html"><i class="fa fa-cutlery" aria-hidden="true"></i>草莓乳酪蛋糕</a></li>
+				<li><a href="commodity.html"><i class="fa fa-cutlery" aria-hidden="true"></i>經典巧克力蛋糕</a></li>
+			</ul>
+			<ul>
+				<li class="title">馬卡龍</li>
+				<li><a href="commodity.html"><i class="fa fa-cutlery" aria-hidden="true"></i>咖啡馬卡龍</a></li>
+				<li><a href="commodity.html"><i class="fa fa-cutlery" aria-hidden="true"></i>香草馬卡龍</a></li>
+				<li><a href="commodity.html"><i class="fa fa-cutlery" aria-hidden="true"></i>焦糖可可馬卡龍</a></li>
+				<li><a href="commodity.html"><i class="fa fa-cutlery" aria-hidden="true"></i>巧克力夾心馬卡龍</a></li>
+			</ul>
+			<ul>
+				<li class="title">水果塔</li>
+				<li><a href="commodity.html"><i class="fa fa-cutlery" aria-hidden="true"></i>草莓水果塔</a></li>
+				<li><a href="commodity.html"><i class="fa fa-cutlery" aria-hidden="true"></i>綜合莓水果塔</a></li>
+				<li><a href="commodity.html"><i class="fa fa-cutlery" aria-hidden="true"></i>草莓藍莓水果塔</a></li>
+				<li><a href="commodity.html"><i class="fa fa-cutlery" aria-hidden="true"></i>草莓奇異果水果塔</a></li>
+			</ul>
+		</nav>
+		<label for="side-menu-switch">
+			<i class="fa fa-chevron-right" aria-hidden="true"></i>
+		</label>
+	    </div>
+    </div>
+  <br>
+    <div id=div1 class="aboutus">
+		<div  class="container">
+			
+			<div class="aboutus-txt" >
+				<h1 class="animated rotateInDownLeft">
+					我們是 夢想家
+					<!--新增按鈕介紹-->
+					<INPUT type="button" style="border: none ;background: transparent; font-size: 40px; color:red;position: absolute;" value="♥" id=btnDivH name=btnDivH LANGUAGE=javascript onclick="return btnDivH_onclick()"> </INPUT>
+					<!--新增結束-->
+					<small class="animated  bounceInLeft " style="animation-delay:0.3s">
+						一間想照顧台灣農民的甜點坊
+					</small>
+				</h1>
+				<h2 class="animated bounceInRight" style="animation-delay:0.6s">這條路不好走,但我們依舊築夢踏實</h2>
+				<p class="animated bounceInUp" style="animation-delay:0.5s">
+					我們希望透過在地素材，做出健康且美味的甜點,<br>
+					讓愛吃甜食的人，也能輕鬆無負擔。
+			    </p>  
+			</div>
+		</div>
+	</div>
+	<!----div2------->
+	<div id=div999 class="aboutus" style="display: none;">
+		<div class="team10000" style="display: flex; padding-left: 100px;">
+				    <div class="teampic animated bounceInLeft" style=" padding-top: 50px;">
+						<div id="content1" class="hovershow" style="position: absolute;margin-top: 150px;">
+							哈囉，我叫莊玉馨。<br>目前就讀中原大學資管系二年級，對於有興趣的科目所學想要去做延伸的學習及挑戰，希望所學的知識及技能未來能夠學以致用。
+	   					</div>
+				  		<img src="../assets/images/team1.png" width="250" height="250" alt="玉馨"style="border-radius:100px;">
+				    </div>
+
+				    <div class="teampic animated bounceInDown" style="padding-top: 50px; margin-left: 50px;">
+						<div id="content1" class="hovershow" style="position: absolute;margin-top: 150px;">
+							我叫湯易鑫。<br>目前就讀資管系二年級，目前對前端很感興趣，希望可做以繼續努力並朝著這方面發展，並能提升自己的程式能力，連後端一起做加強。
+	   					</div>
+				    	<img src="../assets/images/team2.jpg" width="250" height="250" alt="易鑫"style="border-radius:100px;">
+				    </div>
+		</div>
+		<div class="team10000" style="display: flex; padding-left: 100px;">
+				  <div class="teampic animated bounceInRight" style=" padding-top: 50px;">
+				  	<div id="content1" class="hovershow" style="position: absolute;margin-top: 150px;">
+							嘿～你好，我叫童偉誠。<br>目前就讀中原資管大二的學生，平常喜歡打籃球，希望大學生活能過得很充實，每天都很快樂。
+	   				</div>
+				  	<img src="../assets/images/team3.png" width="250" height="250" alt="偉誠"style="border-radius:100px;">
+				  </div>
+				  <div class="teampic animated bounceInUp" style="padding-top: 50px; margin-left: 50px;">
+				  	<div id="content1" class="hovershow" style="position: absolute;margin-top: 150px;">
+							我叫王勤中，今年19歲。<br>就讀中原資管二年級，希望自己能把做專題所學習吸收到的知識，應用到之後出社會所面臨的不管是問題還是難關，讓自己變得更加有競爭力。
+	   				</div>
+				  	<img src="../assets/images/team4.png" width="250" height="250" alt="勤中"style="border-radius:100px;">
+				  </div>
+
+		</div>
+	</div>
+	<!--div2結束-->
+    <br>
+	<hr class="style-two" style="justify-content: center;">
+    <div class="footer" style="display: flex;justify-content: center;">
+	    <div class="container" style="display: flex;justify-content: center;">
+	    	   	<img src="../assets/images/1.png" style="width: 120px; height: 120px;">
+		    <div class="footer-item3" style="width: auto;">
+			    <p style=" font-size: 14px; line-height: 1;">服務時間：周一至周五 A.M 8:00~ P.M 6:00</p>
+			    <p style=" font-size: 14px; line-height: 1;">電話：(02)2860-7594</p>
+			    <p style=" font-size: 14px; line-height: 1;">地址：32023 桃園市中壢區中北路二OO號 
+			    <p style=" font-size: 14px; line-height: 1;">200 Chung Pei Road, Chung Li District, Taoyuan City, Taiwan 32023, R.O.C.</p>
+		    </div>
+        </div>
+    </div>
+<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<!-- JQUERY-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <a href="#top" class="to-top"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
+    <script>
+    	$(document).ready(function(){
+    		var offset = 150    		
+    		var duration = 400;
+    	    $(window).scroll(function(){;
+
+    	    	if($(this).scrollTop() > offset){
+    	    		$('.to-top').fadeIn(duration);
+    	    	}
+    	    	else{
+    	    		$('.to-top').fadeOut(duration);
+    	    	}
+    	    });
+
+    	    $('.to-top').click(function(){
+    	    	$('body').animate({scrollTop:0},duration);
+    	    })
+    	});
+    </script>
+</body>
+</html>

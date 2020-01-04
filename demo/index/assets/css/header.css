@@ -1,0 +1,402 @@
+        /*整個網頁*/
+       *{
+	        margin: 0;
+	        padding: 0;
+	        list-style: none;
+	        font-family: 'Noto Sans TC', sans-serif;
+        }
+        body{
+	        background-color:#fff;
+	    
+        }
+        /*...................Header開始...................*/
+        /*固定header在上方*/
+        .stay-top{
+			position:fixed;
+			top:0px;
+	        left:0px;
+			width:100%;
+			z-index:3;
+
+		}
+		/*購物車框架 浮在header上面*/
+		.shipping{
+			width:100%;
+			height:auto;
+			font-size:16px;
+			padding-top:10px;
+			position:absolute;
+			z-index:4;
+			display:flex;
+			justify-content:flex-end;
+		}
+		/*購物車照片*/
+		.shipping img{
+			width:30px;
+			height:30px;
+			padding-left:10px;
+		}
+		/*以下為超連結屬性設定以及hover底線效果*/
+		.shipping a{
+			color:black;
+			padding-right:20px;
+			text-decoration:none;
+		}
+		.shipping .B{
+			padding-bottom:20px;
+			padding-left:10px;
+		}
+		.shipping .A,.B{
+			position:relative;
+		}
+		.shipping .C{
+			border-left:2px solid black;
+		}
+		.shipping .A:after{
+			color: #ccc;
+            content:'';
+			position:absolute;
+			left:0%;
+			right:100%;
+			bottom:0;
+			height:0;
+			border-bottom:1.5px solid black;
+			transition:.4s;
+		}
+		.shipping .A:hover:after{
+			left:0;
+			right:0;
+		}
+		.shipping .A:hover{
+			color: #ccc;
+			top:1px;
+		}
+	    .shipping .B:after{
+			color: #ccc;
+            content:'';
+			position:absolute;
+			left:0%;
+			right:100%;
+			bottom:20px;
+			height:0;
+			border-bottom:1.5px solid black;
+			transition:.4s;
+		}
+		.shipping .B:hover:after{
+			left:0;
+			right:0;
+		}
+		.shipping .B:hover{
+			color: #ccc;
+			top:1px;
+		}
+		.shipping .C img:hover{
+			color: #ccc; 
+            position: relative;
+            top: 1px;
+            left: 1px;
+		}
+		/*超連結右邊格線屬性設定*/
+	    .right-line {
+			border-right:2px solid black;
+			padding-right:10px;
+			padding-left:10px;
+		}
+        .main-header{
+	        background-color:#fff;
+	        padding:12.5px;
+        }
+        .main-header .container{
+	        display: flex;
+	        justify-content: center;
+	        align-items: center;
+	        max-width:1200px;
+	        height: 100px;
+	        margin:auto;
+	        z-index:4;
+        }
+        .main-header .logo{
+	        width:150px;
+	        position: absolute;
+        }
+        .main-header .logo img{
+	        width:100%;
+	        align-items: center;
+        }
+        .main-header .main-nav{
+	        display: flex;
+	        font-size:20px;
+        }
+        .main-header .main-nav  .main-nav-a{
+	        text-decoration: none;
+	        color: black;
+	        padding: 15px 60px;
+	        position: relative;
+	        transition: .3s;
+	        padding-bottom:30px;
+	        font-size:22px;
+        }
+        .main-header .main-nav .inner-right{
+        	margin-right:80px;
+        }
+        .main-header .main-nav .inner-left{
+        	margin-left:80px;
+        }
+        .main-header .main-nav  .main-nav-a:hover{
+        	top:2px;
+        }
+        .main-header .main-nav  .main-nav-a:nth-child(3){
+	        margin-left: 140px;
+        }
+        /*超連結底線效果設定*/
+        .main-header .main-nav .main-nav-a:after{
+	        content: '';
+	        position: absolute;
+	        left: 50%;
+	        right: 50%;
+	        bottom: 20px;
+	        height: 0;
+	        border-bottom: 2px solid black;
+	        transition: .3s;
+        }
+        .main-header .main-nav .main-nav-a:hover:after {
+	        left: 0;
+	        right: 0;
+        }
+        /*關於我們的下拉選單*/
+		.main-nav .about-us{
+	        display:none;
+	        position: absolute;
+	        top: 80%;
+	        width:200px;
+	        right:66%;/*下拉選單相對右邊多少*/
+	        height:auto;
+	        background-color: rgba(250,250,250,.95);
+	        box-shadow: 5px 5px 10px hsla(240, 40%, 15%,.6);
+	        padding:10px;
+	        line-height:50px;
+	        font-size:18px;
+        }
+        .main-nav .about-us a{
+        	text-decoration:none;
+            color: black;
+            transition:.2s;
+            padding-right:100px;
+        }
+        .main-nav .about-us a:hover{
+        	background-color:rgba(0,0,0,.5);
+        	color:#fff;
+        }
+        /*菜單的下拉選單*/
+        .main-nav .menu{
+	        display:none;
+	        position: absolute;
+	        top: 80%;
+	        width:200px;
+	        right:52.5%;/*下拉選單相對右邊多少*/
+	        height:auto;
+	        background-color: rgba(250,250,250,.95);
+	        box-shadow: 5px 5px 10px hsla(240, 40%, 15%,.6);
+	        padding:10px;
+	        line-height:50px;
+	        font-size:18px;
+        }
+        .main-nav .menu a{
+        	text-decoration: none;
+            color: black;
+            transition: .2s;
+            padding-right:100px;
+        }
+        .main-nav .menu a:hover{
+        	background-color:rgba(0,0,0,.5);
+        	color:#fff;
+        }
+        /*獨家販售的下拉選單*/
+        .main-nav .only{
+	        display:none;
+	        position: absolute;
+	        top: 80%;
+	        width:200px;
+	        right:29%;/*下拉選單相對右邊多少*/
+	        height:auto;
+	        background-color: rgba(255,255,255,.9);
+	        box-shadow: 5px 5px 10px hsla(240, 40%, 15%,.6);
+	        padding:10px;
+	        line-height:50px;
+	        font-size:18px;
+        }
+        .main-nav .only a{
+        	text-decoration: none;
+            color: black;
+            transition: .2s;
+            padding-right:100px;
+        }
+        .main-nav .only a:hover{
+        	background-color:rgba(0,0,0,.5);
+        	color:#fff;
+        }
+        /*常見問題的下拉選單*/
+        .main-nav .normal-question{
+	        display:none;
+	        position: absolute;
+	        top: 80%;
+	        width:200px;
+	        right:15.5%;/*下拉選單相對右邊多少*/
+	        height:auto;
+	        background-color: rgba(255,255,255,.9);
+	        box-shadow: 5px 5px 10px hsla(240, 40%, 15%,.5);
+	        padding:10px;
+	        line-height:50px;
+	        font-size:18px;
+        }
+        .main-nav .normal-question a{
+        	text-decoration: none;
+            color: black;
+            padding-right:100px;
+            transition: .2s;
+        }
+        .main-nav .normal-question a:hover{
+        	background-color:rgba(0,0,0,.5);
+        	color:#fff;
+        }
+        .main-nav li:hover > ul{
+	       display: block;
+        }
+        /*會員中心的下拉選單*/
+        .shipping .account{
+	        display:none;
+	        position:absolute;
+	        top:115%;
+	        width:140px;
+	        right:0.75%;/*下拉選單相對右邊多少*/
+	        height:auto;
+	        background-color: rgba(250,250,250,.95);
+	        box-shadow: 5px 5px 10px hsla(240, 40%, 15%,.6);
+	        padding:10px;
+	        line-height:50px;
+	        font-size:16px;
+
+        }
+        .shipping .account a{
+        	text-decoration:none;
+            color: black;
+            transition:.2s;
+        }
+        .shipping .account a:hover{
+        	background-color:rgba(0,0,0,.5);
+        	color:#fff;
+        }
+        .shipping li:hover > ul{
+	       display: block;
+        }
+        /*...................Header結束...................*/
+         /*...................登入介面...................*/
+		.dialog{
+			top:20%;
+	        left:34%;
+            border-radius:8px;
+	        display:none;
+	        z-index:4;
+	        transition:.5s;
+	        position:fixed;
+	        background-color:rgba(75,75,75,0.8);
+	        backdrop-filter:blur(8px);
+	        width:500px;
+	        height:520px;
+	        padding-top:40px;
+		}
+		.dialog>.close{
+			position:absolute;
+			top:3px;
+			right:3px;
+		}
+		.dialog>.close img{
+			background-color:#ccc;
+			width:35px;
+			height:35px;
+			border-radius:999em;
+		}
+        .login{
+            width:260px;
+        	height:440px;
+        	border-radius:8px;
+        	display: flex;
+        	align-items:center;
+        	padding:20px;
+        
+        }
+        .form{
+        	width:400px
+        	color:#FFF;
+        }
+        .form h2{
+        	margin-bottom: 20px;
+        	padding-bottom: 20px;
+        	border-bottom: 1px solid #FFF;
+        }
+        .form .group{
+        	margin-bottom: 20px;
+        }
+        .form label{
+        	line-height: 2;
+        }
+        .form input{
+        	width: 100%;
+        	border: 1px solid #aaa;
+        	line-height: 3;
+        	border-radius: 5px;
+        }
+        .form .btn-group{
+        	font-size: 0;
+        }
+        .form .btn{
+        	font-size: 15px;
+        	border-radius: 5px;
+        	border:none;
+        	width: 100px;
+        	padding:10px 0;
+        	margin-top: 7px;
+        }
+        .btn-group2{
+        	padding-top: 20px;
+        	display: inline-block;
+        }
+        .btn2{
+ 		   padding: 10px 20px;
+           border: 1px solid #C7C7C7;
+           width: 220px;
+        }
+        .form .btn + .btn{
+        	margin-left: 20px;
+        }
+        .btn {
+           padding: 10px 20px;
+           border: 1px solid #C7C7C7;
+           background: -webkit-linear-gradient(#BFBFBF, #F7F7F7);
+           background: -o-linear-gradient(#BFBFBF, #F7F7F7);
+           background: linear-gradient(#BFBFBF, #F7F7F7);
+           background-color: #F7F7F7;
+           -webkit-border-radius: 8px;
+           -moz-border-radius: 8px;
+           border-radius: 8px;
+           color: #000000;
+           font-size: 14px;
+           font-family: '微軟正黑體';
+           text-decoration: none;
+           font-weight: bold;
+           -webkit-transition: 0.2s;
+           -moz-transition: 0.2s;
+           -o-transition: 0.2s;
+           cursor: pointer;
+           }
+ 		.btn:hover {
+  			background: none;
+  			background-color: #F7F7F7;
+   			border: 1px solid #ffffff;
+   			color: #301010;
+  		}
+		.btn:active {
+   			top: 1px;
+   			position: relative;
+   		}
+	    /*.................登入介面結束...................*/
