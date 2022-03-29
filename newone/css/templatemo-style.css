@@ -810,7 +810,7 @@ figure.effect-ruby:hover img {
 	#google-map { height: 520px; }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 995px) {
 	.hsin { 
 		min-width: 88%; 
 		max-width: 100%;
